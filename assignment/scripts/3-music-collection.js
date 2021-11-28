@@ -48,4 +48,15 @@ function findByArtist(artist) {
 console.log(findByArtist('Led Zeppelin'));
 console.log(findByArtist('Adele'));
 console.log(findByArtist('Twin Shadow'));
-//END TEST 
+//END TEST
+
+function search(objDot0, objDot1) {
+    let result = [];
+    for (let i = 0; i < criteria.length; i++) {
+        if (criteria[i].artist === artist && criteria[i].year === year) {
+            result.push(collection[i]);
+        }
+        if (criteria)
+    } 
+}
+
