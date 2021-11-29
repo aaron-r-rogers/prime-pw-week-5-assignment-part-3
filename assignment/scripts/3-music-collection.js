@@ -53,13 +53,21 @@ console.log(findByArtist('Twin Shadow'));
 
 //STRETCH GOALS
 
-function search(criteria) {
+function search(artist, year) {
     let result = [];
+    let criteria = [];
     let array = Object.values(criteria);
     for (let i = 0; i < array.length; i++) {
-        if (arreay[i].artist === artist && array[i].year === year) {
+        let criteria = array[i];
+        if (array[i].artist === artist && array[i].year === year) {
             result.push(array[i]);
         }
-    } 
+    } return result
 }
 
+//BEGIN TEST
+let rayAlbum = { artist: 'Ray Charles', year: '1957' };
+let macAlbum = { artist: 'Fleetwood Mac', year: '1977' };
+console.log(search(rayAlbum));
+console.log(search(macAlbum));
+//END TEST
