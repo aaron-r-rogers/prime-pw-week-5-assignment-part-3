@@ -50,13 +50,16 @@ console.log(findByArtist('Adele'));
 console.log(findByArtist('Twin Shadow'));
 //END TEST
 
-function search(objDot0, objDot1) {
+
+//STRETCH GOALS
+
+function search(criteria) {
     let result = [];
-    for (let i = 0; i < criteria.length; i++) {
-        if (criteria[i].artist === artist && criteria[i].year === year) {
-            result.push(collection[i]);
+    let array = Object.values(criteria);
+    for (let i = 0; i < array.length; i++) {
+        if (arreay[i].artist === artist && array[i].year === year) {
+            result.push(array[i]);
         }
-        if (criteria)
     } 
 }
 
